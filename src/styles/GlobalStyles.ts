@@ -26,7 +26,7 @@ export const muiTheme = (options?: ThemeOptions): Theme => {
     layout: {
       headerHeight: "70px",
       footerMinHeightDesktop: "70px",
-      footerMinHeightMobile: "116px",
+      footerMinHeightMobile: "132px",
     },
     palette: {
       primary: {
