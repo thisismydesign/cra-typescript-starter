@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { Box, Typography } from "@material-ui/core";
 
-import logoImg from "resources/logo.png";
+import logoImg from "resources/logo-45x45.png";
 import LinkNoDecor from "components/elements/LinkNoDecor/LinkNoDecor";
 
 import { HeaderWrapper, LogoImage } from "./Header.style";
