@@ -5,7 +5,6 @@ import useIsDesktopLayout from "utils/useIsDesktopLayout";
 const useFooterMinHeight = (desktop: string, mobile: string): string => {
   const isDesktopLayout = useIsDesktopLayout();
   return isDesktopLayout ? desktop : mobile;
-  // TODO try and remove this line. WTF
 };
 
 export const HeaderWrapper = styled.div((props) => {
