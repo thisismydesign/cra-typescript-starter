@@ -42,11 +42,18 @@ const Footer: FunctionComponent = () => {
           </Box>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Link component={RouterLink} to="/legal">
-            <Typography variant="body2">
-              Imprint | Privacy | Terms and Conditions
-            </Typography>
-          </Link>
+          <Box
+            display="flex"
+            justifyContent="space-around"
+            alignItems="center"
+            height="100%"
+          >
+            <Link component={RouterLink} to="/legal">
+              <Typography variant="body2">
+                Imprint | Privacy | Terms and Conditions
+              </Typography>
+            </Link>
+          </Box>
         </Grid>
         <Grid item xs={12} sm={4}>
           <Box
