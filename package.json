@@ -1,0 +1,57 @@
+{
+  "name": "cra-typescript-boilerplate",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "typescript": "~3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext ts,tsx,js,jsx --no-error-on-unmatched-pattern"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "npm": ">=6.6"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "//devDependencies": {
+    "eslint*": "Code style. Packages part of `react-scripts` should not be added here, otherwise there might be verion mismatches: https://github.com/typescript-eslint/typescript-eslint/issues/2193",
+    "pre-commit": "run scripts before each commit",
+    "prettier": "code formatting"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.2",
+    "@testing-library/react": "^10.4.8",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.17.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-testing-library": "^3.4.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.0.5"
+  }
+}
