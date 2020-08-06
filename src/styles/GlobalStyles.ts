@@ -5,20 +5,14 @@ import { hexToRgb, addAlpha } from "./StyleHelper";
 
 const primary = "#74e3a8";
 const secondary = "#e37474";
+const background = "#b8ffef";
+const headerBackground = "#00bfa5";
 
 export const GlobalStyles = createGlobalStyle`
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
+  body {
+    margin: 0;
+    background-color: ${background};
+  }
 `;
 
 export const muiTheme = (options?: ThemeOptions): Theme => {
@@ -36,6 +30,7 @@ export const muiTheme = (options?: ThemeOptions): Theme => {
         main: secondary,
       },
     },
+    headerBackground,
     overrides: {
       MuiListItem: {
         root: {

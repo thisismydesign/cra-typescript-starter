@@ -7,6 +7,7 @@ declare module "@material-ui/core/styles/createMuiTheme" {
       footerMinHeightDesktop: string;
       footerMinHeightMobile: string;
     };
+    headerBackground?: string;
   }
 }
 
