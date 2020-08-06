@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import Layout from "components/App/Layout/Layout";
 import Loading from "components/App/Loading/Loading";
-// import Head from "components/App/Head/Head";
+import Head from "components/App/Head/Head";
 // import usePageTracking from "utils/usePageTracking";
 
 const Legal = lazy(() => import("components/App/Legal/Legal"));
@@ -13,7 +13,7 @@ const App: FunctionComponent = () => {
 
   return (
     <>
-      {/* <Head /> */}
+      <Head />
       <Layout>
         <Suspense fallback={<Loading />}>
           <Switch>
