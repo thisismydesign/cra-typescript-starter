@@ -7,6 +7,7 @@ import Head from "components/App/Head/Head";
 import usePageTracking from "utils/usePageTracking";
 
 const Legal = lazy(() => import("components/App/Legal/Legal"));
+const Home = lazy(() => import("components/App/Home/Home"));
 
 const App: FunctionComponent = () => {
   usePageTracking();
@@ -17,6 +18,7 @@ const App: FunctionComponent = () => {
       <Layout>
         <Suspense fallback={<Loading />}>
           <Switch>
+            <Route exact path="/" component={Home} />
             <Route exact path="/legal" component={Legal} />
             <Route path="/" />
           </Switch>
