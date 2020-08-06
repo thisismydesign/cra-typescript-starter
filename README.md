@@ -5,7 +5,16 @@
 It has
 - everything from [js-boilerplate](https://github.com/c-hive/js-boilerplate)
 - everything from [cra-boilerplate](https://github.com/c-hive/cra-boilerplate)
-- ESLint rules for TypeScript
+- everything from [cra-typescript-boilerplate](https://github.com/c-hive/cra-typescript-boilerplate)
+- Material UI
+- styled-components
+- cypress
+- Responsive Layout component with header and footer
+- Configurable color palette
+- React router
+- Code splitting
+- Helmet
+- Google Analytics
 
 ## Conventions
 

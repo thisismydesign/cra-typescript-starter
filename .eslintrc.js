@@ -59,7 +59,7 @@ module.exports = {
     "import/no-extraneous-dependencies": [ // https://stackoverflow.com/q/44939304/2771889
       "error",
       {
-        devDependencies: ["**/*.test.ts", "**/*.test.tsx", "src/setupTests.ts"],
+        devDependencies: ["**/*.test.ts", "**/*.test.tsx", "src/setupTests.ts", "src/test-utils.tsx"],
       },
     ],
     "import/extensions": [ // https://stackoverflow.com/a/59268871/2771889
@@ -72,6 +72,7 @@ module.exports = {
         "tsx": "never"
       },
     ],
+    "react/prop-types": "off", // https://github.com/c-hive/cra-typescript-starter/issues/1
     "@typescript-eslint/no-unused-vars": [
       "error",
       { varsIgnorePattern: "_", argsIgnorePattern: "_" },

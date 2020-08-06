@@ -1,23 +1,51 @@
 {
-  "name": "cra-typescript-boilerplate",
+  "name": "cra-typescript-starter",
   "version": "1.0.0",
-  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage --watchAll=false",
+    "test:nowatch": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "serve": "serve -s build"
+  },
+  "//dependencies": {
+    "alphach": "Add / modify transparency of RGB colors",
+    "hex-rgb": "Convert HEX to RGB",
+    "raw.macro": "load misc assets: https://github.com/facebook/create-react-app/issues/3722"
+  },
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/styled-components": "^5.1.2",
+    "alphach": "^0.0.1",
+    "hex-rgb": "^4.1.0",
+    "raw.macro": "^0.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "serve": "^11.3.2",
+    "styled-components": "^5.1.1",
     "typescript": "~3.7.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
-    "eject": "react-scripts eject",
-    "lint": "eslint . --ext ts,tsx,js,jsx --no-error-on-unmatched-pattern"
+  "//resolutions": {
+    "@typescript-eslint": "https://github.com/typescript-eslint/typescript-eslint/issues/1746"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "2.23.0",
+    "@typescript-eslint/parser": "2.23.0",
+    "@typescript-eslint/typescript-estree": "2.23.0"
   },
   "browserslist": {
     "production": [
@@ -36,7 +64,7 @@
   },
   "pre-commit": [
     "lint",
-    "test"
+    "test:nowatch"
   ],
   "//devDependencies": {
     "eslint*": "Code style. Packages part of `react-scripts` should not be added here, otherwise there might be verion mismatches: https://github.com/typescript-eslint/typescript-eslint/issues/2193",
