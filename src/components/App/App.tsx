@@ -17,9 +17,6 @@ const App: FunctionComponent = () => {
       <Layout>
         <Suspense fallback={<Loading />}>
           <Switch>
-            <Route exact path="/terms-and-conditions" component={Legal} />
-            <Route exact path="/data-privacy" component={Legal} />
-            <Route exact path="/imprint" component={Legal} />
             <Route exact path="/legal" component={Legal} />
             <Route path="/" />
           </Switch>

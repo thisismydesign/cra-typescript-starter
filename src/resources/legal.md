@@ -2,4 +2,4 @@
 
 # Privacy Policy
 
-# Terms and conditions
+# Terms and Conditions

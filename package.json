@@ -7,6 +7,7 @@
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
     "test:nowatch": "react-scripts test --watchAll=false",
+    "test:e2e": "cypress run",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext ts,tsx,js,jsx",
     "serve": "serve -s build"
@@ -74,8 +75,10 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.8",
+    "cypress": "^4.12.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-testing-library": "^3.4.1",

@@ -25,6 +25,10 @@ module.exports = {
       },
     },
     {
+      files: ["cypress/**/*"],
+      extends: ["plugin:cypress/recommended"],
+    },
+    {
       files: ["**/*.ts", "**/*.tsx"],
       extends: ["plugin:@typescript-eslint/recommended"],
     },
