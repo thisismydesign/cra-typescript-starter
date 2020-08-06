@@ -16,6 +16,10 @@ It has
 - Helmet
 - Google Analytics
 
+![](demo-mobile.png)
+
+![](demo-desktop.png)
+
 ## Conventions
 
 This project follows [C-Hive guides](https://github.com/c-hive/guides) for code style, way of working and other development concerns.
