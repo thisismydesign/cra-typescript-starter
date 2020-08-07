@@ -1,0 +1,15 @@
+{
+  "short_name": "CRA Typescript Starter by C-Hive",
+  "name": "Web site created using c-hive/cra-typescript-starter",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
