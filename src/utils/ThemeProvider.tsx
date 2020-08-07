@@ -14,8 +14,8 @@ const ThemeProvider: FunctionComponent<{ muiThemeOptions?: ThemeOptions }> = (
 ) => {
   const MuiTheme = muiTheme(props.muiThemeOptions);
 
+  // https://material-ui.com/guides/interoperability/#controlling-priority-3
   return (
-    // https://material-ui.com/guides/interoperability/#controlling-priority-3
     <StylesProvider injectFirst>
       <CssBaseline />
       {/* Making sure MUI theme is accessible by both styled-components and MUI elements: https://stackoverflow.com/a/58462124/2771889 */}
