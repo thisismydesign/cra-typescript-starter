@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73550a2ca6522aec22a8dc5af92807c4",
+    "revision": "cd63d660c40dd640cd497639a3bad84a",
     "url": "/cra-typescript-starter/index.html"
   },
   {
@@ -12,12 +12,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-typescript-starter/static/js/2.bfb3ebab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a5774fefde5041250180",
-    "url": "/cra-typescript-starter/static/js/3.038ccbe4.chunk.js"
+    "revision": "904f50a68253214c7085",
+    "url": "/cra-typescript-starter/static/js/3.1bb03e84.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/cra-typescript-starter/static/js/3.038ccbe4.chunk.js.LICENSE.txt"
+    "url": "/cra-typescript-starter/static/js/3.1bb03e84.chunk.js.LICENSE.txt"
   },
   {
     "revision": "cdcb12ace3673a5b1403",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cra-typescript-starter/static/js/6.3880b8c6.chunk.js"
   },
   {
-    "revision": "ff015b697fffcb2ab8c2",
-    "url": "/cra-typescript-starter/static/js/main.ff9c6463.chunk.js"
+    "revision": "c7b79712a34d21ce0f65",
+    "url": "/cra-typescript-starter/static/js/main.74eeadf0.chunk.js"
   },
   {
     "revision": "150ad2cbf7aa6b27acaf",

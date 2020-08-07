@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cra-typescript-starter/static/js/main.b33f4a3c.chunk.js",
-    "main.js.map": "/cra-typescript-starter/static/js/main.b33f4a3c.chunk.js.map",
+    "main.js": "/cra-typescript-starter/static/js/main.74eeadf0.chunk.js",
+    "main.js.map": "/cra-typescript-starter/static/js/main.74eeadf0.chunk.js.map",
     "runtime-main.js": "/cra-typescript-starter/static/js/runtime-main.86e269ee.js",
     "runtime-main.js.map": "/cra-typescript-starter/static/js/runtime-main.86e269ee.js.map",
     "static/js/2.bfb3ebab.chunk.js": "/cra-typescript-starter/static/js/2.bfb3ebab.chunk.js",
@@ -15,7 +15,7 @@
     "static/js/6.3880b8c6.chunk.js": "/cra-typescript-starter/static/js/6.3880b8c6.chunk.js",
     "static/js/6.3880b8c6.chunk.js.map": "/cra-typescript-starter/static/js/6.3880b8c6.chunk.js.map",
     "index.html": "/cra-typescript-starter/index.html",
-    "precache-manifest.fb455447d20cfeb91efc472d753d5371.js": "/cra-typescript-starter/precache-manifest.fb455447d20cfeb91efc472d753d5371.js",
+    "precache-manifest.cf3756f648bdada0703155ec84663de5.js": "/cra-typescript-starter/precache-manifest.cf3756f648bdada0703155ec84663de5.js",
     "service-worker.js": "/cra-typescript-starter/service-worker.js",
     "static/js/2.bfb3ebab.chunk.js.LICENSE.txt": "/cra-typescript-starter/static/js/2.bfb3ebab.chunk.js.LICENSE.txt",
     "static/js/3.1bb03e84.chunk.js.LICENSE.txt": "/cra-typescript-starter/static/js/3.1bb03e84.chunk.js.LICENSE.txt",
@@ -25,6 +25,6 @@
   "entrypoints": [
     "static/js/runtime-main.86e269ee.js",
     "static/js/3.1bb03e84.chunk.js",
-    "static/js/main.b33f4a3c.chunk.js"
+    "static/js/main.74eeadf0.chunk.js"
   ]
 }
