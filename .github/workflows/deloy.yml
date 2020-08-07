@@ -24,7 +24,7 @@ jobs:
       - name: Build
         env:
           CONFIG: ${{ secrets.CONFIG }}
-        run: yarn build
+        run: yarn build && touch build/.nojekyll
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.2.0
         with:
