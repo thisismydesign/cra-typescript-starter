@@ -8,15 +8,11 @@ export const LogoImage = styled.img(() => {
 });
 
 export const HeaderWrapper = styled(Box)((props) => {
-  console.log(props.theme.headerBackground);
   return {
     position: "fixed",
     top: 0,
-    left: 0,
     width: "100%",
     height: props.theme.layout.headerHeight,
-    boxShadow: "0 5px 10px rgba(0, 0, 0, 0.05)",
-    backgroundColor: props.theme.headerBackground,
   };
 });
 

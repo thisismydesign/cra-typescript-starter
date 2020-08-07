@@ -19,7 +19,9 @@ const Header: FunctionComponent = () => {
             <Box p={2}>
               <LogoImage src={logoImg} />
             </Box>
-            <Typography variant="h5">C-Hive</Typography>
+            <Typography variant="h5" color="textPrimary">
+              Unicorn
+            </Typography>
           </Box>
         </LinkNoDecor>
       </HeaderWrapper>

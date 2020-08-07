@@ -49,7 +49,7 @@ const Footer: FunctionComponent = () => {
             height="100%"
           >
             <Link component={RouterLink} to="/legal">
-              <Typography variant="body2">
+              <Typography variant="body2" color="primary">
                 Imprint | Privacy | Terms and Conditions
               </Typography>
             </Link>
@@ -63,7 +63,7 @@ const Footer: FunctionComponent = () => {
             height="100%"
             paddingRight={isDesktopLayout ? "16px" : "0px"}
           >
-            <Typography variant="body2">
+            <Typography variant="body2" color="textPrimary">
               &copy; {new Date().getFullYear()} C-Hive
             </Typography>
           </Box>
