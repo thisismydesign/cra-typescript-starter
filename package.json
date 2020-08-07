@@ -1,7 +1,7 @@
 {
   "name": "cra-typescript-starter",
   "version": "1.0.0",
-  "homepage":"https://c-hive.github.io/cra-typescript-starter",
+  "homepage": "https://c-hive.github.io/cra-typescript-starter",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
