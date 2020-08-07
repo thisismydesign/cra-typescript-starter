@@ -19,6 +19,8 @@ export const Main = styled.div((props) => {
 
   return {
     minHeight: `calc(100vh - ${props.theme.layout.headerHeight} - ${footerMinHeight})`,
+    display: "flex",
+    flexDirection: "column",
   };
 });
 

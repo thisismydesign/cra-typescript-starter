@@ -19,10 +19,10 @@ const Layout: FunctionComponent = (props) => {
             display="flex"
             flexDirection="column"
             justifyContent="space-between"
-            height="100%" // TODO
+            flex="1"
           >
             {props.children}
-            {/* <Divider /> */}
+            <Divider />
           </Box>
         </Main>
         <FooterWrapper>
