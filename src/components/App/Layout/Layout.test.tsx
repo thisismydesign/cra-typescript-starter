@@ -7,6 +7,6 @@ describe("Layout", () => {
   it("shows the name", () => {
     render(<Layout />);
 
-    expect(screen.getByText("C-Hive")).toBeInTheDocument();
+    expect(screen.getByText("Unicorn")).toBeInTheDocument();
   });
 });
