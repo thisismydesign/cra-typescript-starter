@@ -1,8 +1,12 @@
 # Create React App TypeScript Starter
 
-https://c-hive.github.io/cra-typescript-starter/
-
 #### Opinionated Create React App boilerplate in TypeScript for rapid development with battle-tested standards.
+
+Check out Live: https://c-hive.github.io/cra-typescript-starter/
+
+[Use this template](https://github.com/c-hive/cra-typescript-starter/generate)
+
+## Stack
 
 It has
 - everything from [js-boilerplate](https://github.com/c-hive/js-boilerplate)
