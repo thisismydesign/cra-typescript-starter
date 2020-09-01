@@ -111,4 +111,4 @@ jobs:
         with:
           wait-on: "https://c-hive.github.io/cra-typescript-starter/"
           wait-on-timeout: 120
-          config: baseUrl=https://c-hive.github.io/cra-typescript-starter/
+          config: baseUrl=https://c-hive.github.io/
