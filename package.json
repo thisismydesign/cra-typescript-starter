@@ -66,13 +66,8 @@
   "engines": {
     "npm": ">=6.6"
   },
-  "pre-commit": [
-    "lint",
-    "test:nowatch"
-  ],
   "//devDependencies": {
     "eslint*": "Code style. Packages part of `react-scripts` should not be added here, otherwise there might be verion mismatches: https://github.com/typescript-eslint/typescript-eslint/issues/2193",
-    "pre-commit": "run scripts before each commit",
     "prettier": "code formatting"
   },
   "devDependencies": {
@@ -85,7 +80,6 @@
     "eslint-plugin-jest": "^23.17.1",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-testing-library": "^3.4.1",
-    "pre-commit": "^1.2.2",
     "prettier": "^2.0.5"
   }
 }
