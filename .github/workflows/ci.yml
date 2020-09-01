@@ -51,6 +51,24 @@ jobs:
     - name: Build
       run: yarn build
 
+  test-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ env.node_version }}
+    - uses: c-hive/gha-yarn-cache@v1
+    - name: Cypress run
+      uses: cypress-io/github-action@v2
+      with:
+        build: yarn build
+        start: yarn start
+        wait-on: "http://localhost:3000"
+        wait-on-timeout: 120
+
   deploy:
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
