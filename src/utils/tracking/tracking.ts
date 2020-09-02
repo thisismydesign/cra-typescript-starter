@@ -4,6 +4,8 @@ import ReactGA from "react-ga";
 
 import localLog from "utils/localLog";
 
+type Event = { category: string; action: string; label?: string };
+
 const localEnv = (): boolean => {
   return window.location.href.includes("localhost");
 };
@@ -12,15 +14,15 @@ const ciEnv = (): boolean => {
   return window.location.href.includes("env=CI");
 };
 
-const usePageTracking = (): void => {
+export const usePageTracking = (): void => {
   const location = useLocation();
   const [initialized, setInitialized] = useState(false);
 
   useEffect(() => {
     if (!(localEnv() || ciEnv())) {
       ReactGA.initialize("UA-xxxxxxxxx-x");
+      setInitialized(true);
     }
-    setInitialized(true);
   }, []);
 
   useEffect(() => {
@@ -32,4 +34,10 @@ const usePageTracking = (): void => {
   }, [initialized, location]);
 };
 
-export default usePageTracking;
+export const trackEvent = (event: Event): void => {
+  localLog("Tracking event", event);
+
+  if (!(localEnv() || ciEnv())) {
+    ReactGA.event(event);
+  }
+};

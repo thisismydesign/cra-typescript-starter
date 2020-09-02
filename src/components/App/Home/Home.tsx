@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { Typography, Box, Button } from "@material-ui/core";
 
+import { trackEvent } from "utils/tracking/tracking";
+
 const Home: FunctionComponent = () => {
   return (
     <Box pt="80px">
@@ -13,7 +15,16 @@ const Home: FunctionComponent = () => {
         </Typography>
       </Box>
       <Box pt="20px">
-        <Button variant="contained" color="primary">
+        <Button
+          variant="contained"
+          color="primary"
+          onClick={(_e: React.MouseEvent): void => {
+            trackEvent({
+              category: "User",
+              action: "buttonClicked",
+            });
+          }}
+        >
           Sign me up!
         </Button>
       </Box>
