@@ -4,9 +4,14 @@ module.exports = {
   extends: [
     "react-app",
     "airbnb-base",
+    "airbnb-typescript",
     "plugin:prettier/recommended",
     "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
   ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
   overrides: [
     {
       files: [

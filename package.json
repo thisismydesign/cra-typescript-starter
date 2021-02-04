@@ -38,18 +38,10 @@
     "react-helmet": "^6.1.0",
     "react-markdown": "^4.3.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.0",
+    "react-scripts": "4.0.2",
     "serve": "^11.3.2",
     "styled-components": "^5.1.1",
     "typescript": "~3.7.2"
-  },
-  "//resolutions": {
-    "@typescript-eslint": "https://github.com/typescript-eslint/typescript-eslint/issues/1746"
-  },
-  "resolutions": {
-    "@typescript-eslint/eslint-plugin": "2.23.0",
-    "@typescript-eslint/parser": "2.23.0",
-    "@typescript-eslint/typescript-estree": "2.23.0"
   },
   "browserslist": {
     "production": [
@@ -75,6 +67,7 @@
     "@testing-library/react": "^10.4.8",
     "cypress": "^4.12.1",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-jest": "^23.17.1",
