@@ -1,4 +1,5 @@
-import { ThemeOptions } from "@material-ui/core/styles/createMuiTheme";
+// ESLint weirdness here but `ThemeOptions` must be imported
+import { ThemeOptions as _ThemeOptions } from "@material-ui/core/styles/createMuiTheme";
 
 declare module "@material-ui/core/styles/createMuiTheme" {
   export interface ThemeOptions {

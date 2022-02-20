@@ -1,6 +1,7 @@
 import React from "react";
 import { fireEvent, render } from "test-utils";
 import ReactGA from "react-ga";
+import { screen } from "@testing-library/react";
 
 import Example from "./tracking.example";
 import { trackEvent } from "./tracking";
@@ -17,7 +18,7 @@ const ciUrl = "https://www.vanity.services?env=CI";
 describe("usePageTracking", () => {
   describe(`when URL is ${url}`, () => {
     let location: Location;
-    const mockLocation = (new URL(url) as unknown) as Location;
+    const mockLocation = new URL(url) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -41,8 +42,8 @@ describe("usePageTracking", () => {
     });
 
     it("tracks page change", () => {
-      const { getByText } = render(<Example />);
-      fireEvent.click(getByText("Page"));
+      render(<Example />);
+      fireEvent.click(screen.getByText("Page"));
       expect(ReactGA.pageview).toHaveBeenCalledWith("/page");
     });
   });
@@ -61,7 +62,7 @@ describe("usePageTracking", () => {
 
   describe("when URL has CI env params", () => {
     let location: Location;
-    const mockLocation = (new URL(ciUrl) as unknown) as Location;
+    const mockLocation = new URL(ciUrl) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -95,7 +96,7 @@ describe("trackEvent", () => {
 
   describe(`when URL is ${url}`, () => {
     let location: Location;
-    const mockLocation = (new URL(url) as unknown) as Location;
+    const mockLocation = new URL(url) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -125,7 +126,7 @@ describe("trackEvent", () => {
 
   describe("when URL has CI env params", () => {
     let location: Location;
-    const mockLocation = (new URL(ciUrl) as unknown) as Location;
+    const mockLocation = new URL(ciUrl) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;

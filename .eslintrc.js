@@ -4,9 +4,14 @@ module.exports = {
   extends: [
     "react-app",
     "airbnb-base",
-    "plugin:prettier/recommended",
+    "airbnb-typescript",
     "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
   ],
+  parserOptions: {
+    project: ["./tsconfig.json", "./cypress/tsconfig.json"],
+  },
   overrides: [
     {
       files: [
@@ -60,20 +65,27 @@ module.exports = {
       },
     ],
     "import/no-anonymous-default-export": "error", // https://github.com/c-hive/guides/blob/a82e1b37ef662c8f8d7485793f99970080f40dca/js/best-practices.md#name-functions-when-exporting
-    "import/no-extraneous-dependencies": [ // https://stackoverflow.com/q/44939304/2771889
+    "import/no-extraneous-dependencies": [
+      // https://stackoverflow.com/q/44939304/2771889
       "error",
       {
-        devDependencies: ["**/*.test.ts", "**/*.test.tsx", "src/setupTests.ts", "src/test-utils.tsx"],
+        devDependencies: [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "src/setupTests.ts",
+          "src/test-utils.tsx",
+        ],
       },
     ],
-    "import/extensions": [ // https://stackoverflow.com/a/59268871/2771889
+    "import/extensions": [
+      // https://stackoverflow.com/a/59268871/2771889
       "error",
       "ignorePackages",
       {
-        "js": "never",
-        "jsx": "never",
-        "ts": "never",
-        "tsx": "never"
+        js: "never",
+        jsx: "never",
+        ts: "never",
+        tsx: "never",
       },
     ],
     "react/prop-types": "off", // https://github.com/c-hive/cra-typescript-starter/issues/1
@@ -89,7 +101,8 @@ module.exports = {
     react: {
       version: "detect",
     },
-    "import/resolver": { // https://stackoverflow.com/a/55280867/2771889
+    "import/resolver": {
+      // https://stackoverflow.com/a/55280867/2771889
       node: {
         extensions: [".js", ".jsx", ".ts", ".tsx"],
         paths: ["src"],

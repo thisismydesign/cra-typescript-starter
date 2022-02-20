@@ -12,7 +12,7 @@ const Legal: FunctionComponent = () => {
       </Helmet>
       <Box p={1} pt={[2, 4]} pb={[4, 8]}>
         <Container>
-          <ReactMarkdown source={raw("../../../resources/legal.md")} />
+          <ReactMarkdown>{raw("../../../resources/legal.md")}</ReactMarkdown>
         </Container>
       </Box>
     </>
