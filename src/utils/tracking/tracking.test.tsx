@@ -1,6 +1,7 @@
 import React from "react";
 import { fireEvent, render } from "test-utils";
 import ReactGA from "react-ga";
+import { screen } from "@testing-library/react";
 
 import Example from "./tracking.example";
 import { trackEvent } from "./tracking";
@@ -41,8 +42,8 @@ describe("usePageTracking", () => {
     });
 
     it("tracks page change", () => {
-      const { getByText } = render(<Example />);
-      fireEvent.click(getByText("Page"));
+      render(<Example />);
+      fireEvent.click(screen.getByText("Page"));
       expect(ReactGA.pageview).toHaveBeenCalledWith("/page");
     });
   });
