@@ -19,12 +19,9 @@
     "raw.macro": "load misc assets: https://github.com/facebook/create-react-app/issues/3722"
   },
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
     "@mui/icons-material": "^5.4.2",
     "@mui/material": "^5.4.2",
-    "@mui/styled-engine-sc": "^5.4.2",
-    "@mui/styles": "^5.4.2",
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@5.4.2",
     "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.39",
@@ -46,6 +43,12 @@
     "serve": "^11.3.2",
     "styled-components": "^5.1.1",
     "typescript": "^4.5.5"
+  },
+  "//resolutions": {
+    "@mui/styled-engine": "https://mui.com/guides/styled-engine/"
+  },
+  "resolutions": {
+    "@mui/styled-engine": "npm:@mui/styled-engine-sc@5.4.2"
   },
   "browserslist": {
     "production": [

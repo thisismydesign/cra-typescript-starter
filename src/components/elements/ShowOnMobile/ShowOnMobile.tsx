@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import Hidden from "@material-ui/core/Hidden";
+import Hidden from "@mui/material/Hidden";
 
 const ShowOnMobile: FunctionComponent = (props) => {
   return <Hidden smUp>{props.children}</Hidden>;

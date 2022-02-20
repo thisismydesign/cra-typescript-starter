@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Grid, GridProps } from "@material-ui/core";
+import { Box, Grid, GridProps } from "@mui/material";
 
 // This is to resolve the scroll that appears due to the negative margin applied by the spacing prop
 // https://material-ui.com/components/grid/#negative-margin

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Box } from "@material-ui/core";
+import { Box } from "@mui/material";
 
 export const LogoImage = styled.img(() => {
   return {

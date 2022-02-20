@@ -1,31 +1,30 @@
 import React, { FunctionComponent } from "react";
 import {
-  StylesProvider,
-  MuiThemeProvider,
+  ThemeProvider as MuiThemeProvider,
   ThemeOptions,
-} from "@material-ui/core/styles";
+} from "@mui/material/styles";
+import { StyledEngineProvider, CssBaseline } from "@mui/material";
 import { ThemeProvider as ScThemeProvider } from "styled-components";
-import CssBaseline from "@material-ui/core/CssBaseline";
 
-import { GlobalStyles, muiTheme } from "styles/GlobalStyles";
+import { GlobalStyles, createMuiTheme } from "styles/GlobalStyles";
 
 const ThemeProvider: FunctionComponent<{ muiThemeOptions?: ThemeOptions }> = (
   props
 ) => {
-  const MuiTheme = muiTheme(props.muiThemeOptions);
+  const muiTheme = createMuiTheme(props.muiThemeOptions);
 
-  // https://material-ui.com/guides/interoperability/#controlling-priority-3
+  // https://mui.com/guides/interoperability/#css-injection-order-3
   return (
-    <StylesProvider injectFirst>
+    <StyledEngineProvider injectFirst>
       <CssBaseline />
       {/* Making sure MUI theme is accessible by both styled-components and MUI elements: https://stackoverflow.com/a/58462124/2771889 */}
-      <MuiThemeProvider theme={MuiTheme}>
-        <ScThemeProvider theme={MuiTheme}>
+      <MuiThemeProvider theme={muiTheme}>
+        <ScThemeProvider theme={muiTheme}>
           <GlobalStyles />
           {props.children}
         </ScThemeProvider>
       </MuiThemeProvider>
-    </StylesProvider>
+    </StyledEngineProvider>
   );
 };
 

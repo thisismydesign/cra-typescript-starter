@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from "react";
-import Hidden from "@material-ui/core/Hidden";
+import Hidden from "@mui/material/Hidden";
 
 const HideOnMobile: FunctionComponent = (props) => {
-  return <Hidden xsDown>{props.children}</Hidden>;
+  return <Hidden smDown>{props.children}</Hidden>;
 };
 
 export default HideOnMobile;

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import ReactMarkdown from "react-markdown";
 import raw from "raw.macro";
-import { Box, Container } from "@material-ui/core";
+import { Box, Container } from "@mui/material";
 import { Helmet } from "react-helmet";
 
 const Legal: FunctionComponent = () => {
