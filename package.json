@@ -55,9 +55,6 @@
       "last 1 safari version"
     ]
   },
-  "engines": {
-    "npm": ">=6.6"
-  },
   "//devDependencies": {
     "eslint*": "Code style. Packages part of `react-scripts` should not be added here, otherwise there might be verion mismatches: https://github.com/typescript-eslint/typescript-eslint/issues/2193",
     "prettier": "code formatting"
