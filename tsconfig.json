@@ -22,7 +22,8 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": [
-    "src"
+    "src",
+    ".eslintrc.js"
   ],
   "typeRoots": [
     "src/typings",
