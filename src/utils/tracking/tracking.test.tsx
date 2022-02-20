@@ -17,7 +17,7 @@ const ciUrl = "https://www.vanity.services?env=CI";
 describe("usePageTracking", () => {
   describe(`when URL is ${url}`, () => {
     let location: Location;
-    const mockLocation = (new URL(url) as unknown) as Location;
+    const mockLocation = new URL(url) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -61,7 +61,7 @@ describe("usePageTracking", () => {
 
   describe("when URL has CI env params", () => {
     let location: Location;
-    const mockLocation = (new URL(ciUrl) as unknown) as Location;
+    const mockLocation = new URL(ciUrl) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -95,7 +95,7 @@ describe("trackEvent", () => {
 
   describe(`when URL is ${url}`, () => {
     let location: Location;
-    const mockLocation = (new URL(url) as unknown) as Location;
+    const mockLocation = new URL(url) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
@@ -125,7 +125,7 @@ describe("trackEvent", () => {
 
   describe("when URL has CI env params", () => {
     let location: Location;
-    const mockLocation = (new URL(ciUrl) as unknown) as Location;
+    const mockLocation = new URL(ciUrl) as unknown as Location;
 
     beforeEach(() => {
       location = window.location;
