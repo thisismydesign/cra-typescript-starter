@@ -23,6 +23,7 @@ describe("usePageTracking", () => {
     beforeEach(() => {
       location = window.location;
       mockLocation.replace = jest.fn();
+      // @ts-expect-error dirty fix
       delete window.location;
       window.location = mockLocation;
     });
@@ -67,6 +68,7 @@ describe("usePageTracking", () => {
     beforeEach(() => {
       location = window.location;
       mockLocation.replace = jest.fn();
+      // @ts-expect-error dirty fix
       delete window.location;
       window.location = mockLocation;
     });
@@ -101,6 +103,7 @@ describe("trackEvent", () => {
     beforeEach(() => {
       location = window.location;
       mockLocation.replace = jest.fn();
+      // @ts-expect-error dirty fix
       delete window.location;
       window.location = mockLocation;
     });
@@ -131,6 +134,7 @@ describe("trackEvent", () => {
     beforeEach(() => {
       location = window.location;
       mockLocation.replace = jest.fn();
+      // @ts-expect-error dirty fix
       delete window.location;
       window.location = mockLocation;
     });
