@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react";
-import Hidden from "@mui/material/Hidden";
+import { Box } from "@mui/material";
 
 const HideOnMobile: FunctionComponent = (props) => {
-  return <Hidden smDown>{props.children}</Hidden>;
+  return (
+    <Box component="span" sx={{ display: { xs: "none", sm: "block" } }}>
+      {props.children}
+    </Box>
+  );
 };
 
 export default HideOnMobile;
