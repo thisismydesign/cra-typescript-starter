@@ -6,7 +6,7 @@ import { trackEvent } from "utils/tracking/tracking";
 const Home: FunctionComponent = () => {
   return (
     <Box pt="80px">
-      <Typography variant="h2" color="primary">
+      <Typography variant="h2" color="info.dark">
         This template is great.
       </Typography>
       <Box pt="20px">
@@ -17,7 +17,7 @@ const Home: FunctionComponent = () => {
       <Box pt="20px">
         <Button
           variant="contained"
-          color="primary"
+          color="info"
           onClick={(_e: React.MouseEvent): void => {
             trackEvent({
               category: "User",

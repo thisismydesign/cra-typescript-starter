@@ -49,7 +49,7 @@ const Footer: FunctionComponent = () => {
             height="100%"
           >
             <LinkNoDecor to="/legal">
-              <Typography variant="body2" color="primary">
+              <Typography variant="body2" color="info.dark">
                 Imprint | Privacy | Terms and Conditions
               </Typography>
             </LinkNoDecor>
