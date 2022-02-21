@@ -1,2 +1,0 @@
-(this["webpackJsonpcra-typescript-starter"]=this["webpackJsonpcra-typescript-starter"]||[]).push([[5],{213:function(e,t,n){"use strict";n.r(t);var a=n(0),r=n.n(a),c=n(131),s=n.n(c),l=n(109),i=n(104),p=n(48);t.default=function(){return r.a.createElement(r.a.Fragment,null,r.a.createElement(p.a,null,r.a.createElement("meta",{name:"robots",content:"noindex"})),r.a.createElement(l.a,{p:1,pt:[2,4],pb:[4,8]},r.a.createElement(i.a,null,r.a.createElement(s.a,{source:"# Imprint\n\n# Privacy Policy\n\n# Terms and Conditions\n"}))))}}}]);
-//# sourceMappingURL=5.925538f1.chunk.js.map

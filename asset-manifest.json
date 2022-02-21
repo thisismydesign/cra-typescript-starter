@@ -1,30 +1,20 @@
 {
   "files": {
-    "main.js": "/cra-typescript-starter/static/js/main.e895df39.chunk.js",
-    "main.js.map": "/cra-typescript-starter/static/js/main.e895df39.chunk.js.map",
-    "runtime-main.js": "/cra-typescript-starter/static/js/runtime-main.8f786e07.js",
-    "runtime-main.js.map": "/cra-typescript-starter/static/js/runtime-main.8f786e07.js.map",
-    "static/js/2.171e6c0c.chunk.js": "/cra-typescript-starter/static/js/2.171e6c0c.chunk.js",
-    "static/js/2.171e6c0c.chunk.js.map": "/cra-typescript-starter/static/js/2.171e6c0c.chunk.js.map",
-    "static/js/3.d9d996d5.chunk.js": "/cra-typescript-starter/static/js/3.d9d996d5.chunk.js",
-    "static/js/3.d9d996d5.chunk.js.map": "/cra-typescript-starter/static/js/3.d9d996d5.chunk.js.map",
-    "static/js/4.7f8cc48e.chunk.js": "/cra-typescript-starter/static/js/4.7f8cc48e.chunk.js",
-    "static/js/4.7f8cc48e.chunk.js.map": "/cra-typescript-starter/static/js/4.7f8cc48e.chunk.js.map",
-    "static/js/5.e2bd77a2.chunk.js": "/cra-typescript-starter/static/js/5.e2bd77a2.chunk.js",
-    "static/js/5.e2bd77a2.chunk.js.map": "/cra-typescript-starter/static/js/5.e2bd77a2.chunk.js.map",
-    "static/js/6.f450e917.chunk.js": "/cra-typescript-starter/static/js/6.f450e917.chunk.js",
-    "static/js/6.f450e917.chunk.js.map": "/cra-typescript-starter/static/js/6.f450e917.chunk.js.map",
+    "main.js": "/cra-typescript-starter/static/js/main.68334042.js",
+    "static/js/880.6c9fd2ae.chunk.js": "/cra-typescript-starter/static/js/880.6c9fd2ae.chunk.js",
+    "static/js/734.afabc341.chunk.js": "/cra-typescript-starter/static/js/734.afabc341.chunk.js",
+    "static/js/619.fa23ba9c.chunk.js": "/cra-typescript-starter/static/js/619.fa23ba9c.chunk.js",
+    "static/js/589.2fc8504c.chunk.js": "/cra-typescript-starter/static/js/589.2fc8504c.chunk.js",
+    "static/media/background.png": "/cra-typescript-starter/static/media/background.5cdab15129718c423143.png",
+    "static/media/medium-icon.svg": "/cra-typescript-starter/static/media/medium-icon.023b978353e387672edb9c5305e40544.svg",
     "index.html": "/cra-typescript-starter/index.html",
-    "precache-manifest.355f560c592052f01d4b928a5303fa78.js": "/cra-typescript-starter/precache-manifest.355f560c592052f01d4b928a5303fa78.js",
-    "service-worker.js": "/cra-typescript-starter/service-worker.js",
-    "static/js/2.171e6c0c.chunk.js.LICENSE.txt": "/cra-typescript-starter/static/js/2.171e6c0c.chunk.js.LICENSE.txt",
-    "static/js/3.d9d996d5.chunk.js.LICENSE.txt": "/cra-typescript-starter/static/js/3.d9d996d5.chunk.js.LICENSE.txt",
-    "static/media/background.png": "/cra-typescript-starter/static/media/background.70b30498.png",
-    "static/media/medium-icon.svg": "/cra-typescript-starter/static/media/medium-icon.3a5e0e01.svg"
+    "main.68334042.js.map": "/cra-typescript-starter/static/js/main.68334042.js.map",
+    "880.6c9fd2ae.chunk.js.map": "/cra-typescript-starter/static/js/880.6c9fd2ae.chunk.js.map",
+    "734.afabc341.chunk.js.map": "/cra-typescript-starter/static/js/734.afabc341.chunk.js.map",
+    "619.fa23ba9c.chunk.js.map": "/cra-typescript-starter/static/js/619.fa23ba9c.chunk.js.map",
+    "589.2fc8504c.chunk.js.map": "/cra-typescript-starter/static/js/589.2fc8504c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8f786e07.js",
-    "static/js/3.d9d996d5.chunk.js",
-    "static/js/main.e895df39.chunk.js"
+    "static/js/main.68334042.js"
   ]
 }
