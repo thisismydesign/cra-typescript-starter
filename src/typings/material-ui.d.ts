@@ -1,7 +1,6 @@
-// ESLint weirdness here but `ThemeOptions` must be imported
-import { ThemeOptions as _ThemeOptions } from "@material-ui/core/styles/createMuiTheme";
+import { ThemeOptions as _ThemeOptions } from "@mui/material/styles";
 
-declare module "@material-ui/core/styles/createMuiTheme" {
+declare module "@mui/material/styles/createTheme" {
   export interface ThemeOptions {
     layout?: {
       headerHeight: string;
@@ -13,7 +12,7 @@ declare module "@material-ui/core/styles/createMuiTheme" {
 }
 
 // For <LinkNoDecor />
-declare module "@material-ui/core/Link" {
+declare module "@mui/material/Link" {
   export interface LinkProps {
     to: string;
     children;

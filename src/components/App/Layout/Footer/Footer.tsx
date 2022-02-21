@@ -1,10 +1,10 @@
 import React, { FunctionComponent } from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import { Box, Grid, Link, Typography } from "@material-ui/core";
-import { Link as RouterLink } from "react-router-dom";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Box, Grid, Link, Typography } from "@mui/material";
 
 import useIsDesktopLayout from "utils/useIsDesktopLayout";
 import MediumIcon from "resources/medium-icon.svg";
+import LinkNoDecor from "components/elements/LinkNoDecor/LinkNoDecor";
 
 import { FooterRootGrid, IconImg } from "./Footer.style";
 
@@ -48,11 +48,11 @@ const Footer: FunctionComponent = () => {
             alignItems="center"
             height="100%"
           >
-            <Link component={RouterLink} to="/legal">
+            <LinkNoDecor to="/legal">
               <Typography variant="body2" color="primary">
                 Imprint | Privacy | Terms and Conditions
               </Typography>
-            </Link>
+            </LinkNoDecor>
           </Box>
         </Grid>
         <Grid item xs={12} sm={4}>

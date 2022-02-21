@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { Box, Typography } from "@material-ui/core";
+import { Box, Typography } from "@mui/material";
 
 import logoImg from "resources/logo-45x45.png";
 import LinkNoDecor from "components/elements/LinkNoDecor/LinkNoDecor";

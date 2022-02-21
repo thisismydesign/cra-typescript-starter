@@ -1,31 +1,36 @@
 import React, { FunctionComponent, ReactElement } from "react";
 import { render, RenderOptions, RenderResult } from "@testing-library/react";
 import { HashRouter as Router } from "react-router-dom";
-import { Breakpoint } from "@material-ui/core/styles/createBreakpoints";
+import { Breakpoint, ThemeOptions } from "@mui/material/styles";
+import { StyledEngineProvider } from "@mui/material";
 
 import ThemeProvider from "utils/ThemeProvider";
 
 export const DesktopThemeWrapper: FunctionComponent = (props) => {
   const muiThemeOptions = {
     props: { MuiWithWidth: { initialWidth: "sm" as Breakpoint } },
-  };
+  } as ThemeOptions;
 
   return (
-    <ThemeProvider muiThemeOptions={muiThemeOptions}>
-      <Router>{props.children}</Router>
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider muiThemeOptions={muiThemeOptions}>
+        <Router>{props.children}</Router>
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 };
 
 export const MobileThemeWrapper: FunctionComponent = (props) => {
   const muiThemeOptions = {
     props: { MuiWithWidth: { initialWidth: "xs" as Breakpoint } },
-  };
+  } as ThemeOptions;
 
   return (
-    <ThemeProvider muiThemeOptions={muiThemeOptions}>
-      <Router>{props.children}</Router>
-    </ThemeProvider>
+    <StyledEngineProvider injectFirst>
+      <ThemeProvider muiThemeOptions={muiThemeOptions}>
+        <Router>{props.children}</Router>
+      </ThemeProvider>
+    </StyledEngineProvider>
   );
 };
 

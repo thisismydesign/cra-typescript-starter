@@ -7,6 +7,6 @@ describe("Layout", () => {
   it("shows the name", () => {
     render(<Layout />);
 
-    expect(screen.getByText("Unicorn")).toBeInTheDocument();
+    expect(screen.getAllByText("Unicorn")[0]).toBeInTheDocument();
   });
 });

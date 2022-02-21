@@ -1,8 +1,12 @@
 import React, { FunctionComponent } from "react";
-import Hidden from "@material-ui/core/Hidden";
+import { Box } from "@mui/material";
 
 const ShowOnMobile: FunctionComponent = (props) => {
-  return <Hidden smUp>{props.children}</Hidden>;
+  return (
+    <Box component="span" sx={{ display: { xs: "block", sm: "none" } }}>
+      {props.children}
+    </Box>
+  );
 };
 
 export default ShowOnMobile;
