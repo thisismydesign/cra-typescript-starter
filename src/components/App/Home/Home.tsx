@@ -1,8 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { Typography, Box, Button } from "@mui/material";
 
-import { trackEvent } from "utils/tracking/tracking";
-
 const Home: FunctionComponent = () => {
   return (
     <Box pt="80px">
@@ -19,10 +17,7 @@ const Home: FunctionComponent = () => {
           variant="contained"
           color="info"
           onClick={(_e: React.MouseEvent): void => {
-            trackEvent({
-              category: "User",
-              action: "buttonClicked",
-            });
+            window.gtag("event", "buttonClicked");
           }}
         >
           Sign me up!
