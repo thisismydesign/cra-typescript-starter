@@ -100,7 +100,7 @@ jobs:
 
   test-e2e-live:
     if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     timeout-minutes: 10
     needs: [deploy]
     steps:
