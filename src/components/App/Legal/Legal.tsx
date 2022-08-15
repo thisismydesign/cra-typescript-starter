@@ -9,6 +9,7 @@ const Legal: FunctionComponent = () => {
     <>
       <Helmet>
         <meta name="robots" content="noindex" />
+        <title>Legal | CRA Typescript Starter by C-Hive</title>
       </Helmet>
       <Box p={1} pt={[2, 4]} pb={[4, 8]}>
         <Container>
