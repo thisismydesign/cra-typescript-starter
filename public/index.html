@@ -33,7 +33,10 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', '%REACT_APP_GA_MEASUREMENT_ID%')
+      gtag('config', '%REACT_APP_GA_MEASUREMENT_ID%', {
+        page_search: location.search,
+        page_hash: location.hash
+      })
     </script>
   </head>
   <body>
