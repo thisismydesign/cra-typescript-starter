@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/cra-typescript-starter/static/js/main.54e60e32.js",
+    "main.js": "/cra-typescript-starter/static/js/main.8479f3ca.js",
     "static/js/880.b02b0418.chunk.js": "/cra-typescript-starter/static/js/880.b02b0418.chunk.js",
     "static/js/734.84daa5fe.chunk.js": "/cra-typescript-starter/static/js/734.84daa5fe.chunk.js",
     "static/js/619.fa23ba9c.chunk.js": "/cra-typescript-starter/static/js/619.fa23ba9c.chunk.js",
@@ -8,13 +8,13 @@
     "static/media/background.png": "/cra-typescript-starter/static/media/background.5cdab15129718c423143.png",
     "static/media/medium-icon.svg": "/cra-typescript-starter/static/media/medium-icon.023b978353e387672edb9c5305e40544.svg",
     "index.html": "/cra-typescript-starter/index.html",
-    "main.54e60e32.js.map": "/cra-typescript-starter/static/js/main.54e60e32.js.map",
+    "main.8479f3ca.js.map": "/cra-typescript-starter/static/js/main.8479f3ca.js.map",
     "880.b02b0418.chunk.js.map": "/cra-typescript-starter/static/js/880.b02b0418.chunk.js.map",
     "734.84daa5fe.chunk.js.map": "/cra-typescript-starter/static/js/734.84daa5fe.chunk.js.map",
     "619.fa23ba9c.chunk.js.map": "/cra-typescript-starter/static/js/619.fa23ba9c.chunk.js.map",
     "589.2fc8504c.chunk.js.map": "/cra-typescript-starter/static/js/589.2fc8504c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.54e60e32.js"
+    "static/js/main.8479f3ca.js"
   ]
 }
