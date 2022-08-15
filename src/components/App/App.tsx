@@ -4,11 +4,14 @@ import { Switch, Route } from "react-router-dom";
 import Layout from "components/App/Layout/Layout";
 import Loading from "components/App/Loading/Loading";
 import Head from "components/App/Head/Head";
+import { usePageTracking } from "utils/tracking/tracking";
 
 const Legal = lazy(() => import("components/App/Legal/Legal"));
 const Home = lazy(() => import("components/App/Home/Home"));
 
 const App: FunctionComponent = () => {
+  usePageTracking();
+
   return (
     <>
       <Head />
